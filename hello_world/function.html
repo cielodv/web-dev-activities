@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const num1 = 10;
+        const num2 = 20;
+
+        function getSum() {
+            const sum = num1 + num2;
+            console.log("The sum is", sum);
+        }
+
+        function getDifference() {
+            const diff = num1 + num2;
+            console.log("The Difference is", diff);
+        }
+
+        function getProduct() {
+            const product = num1 + num2;
+            console.log("The Product is", product);
+        }
+        function getAverage(subj1, subj2, subj3) {
+        const sum = subj1 + subj2 + subj3;
+        const average = sum / 3;
+        console.log("The average is", average);
+        }
+        function getQuotient(num6, num7) {
+            const quotient = num6 / num7;
+
+            return quotient;
+        }
+        getSum();
+        getDifference();
+        getProduct(5, 20);
+        getProduct(10, 50);
+        getAverage(90, 95, 99);
+
+        console.log(getQuotient(9, 10));
+
+        const quotient = getQuotient(9, 10);
+        console.log("The quotient is", quotient);
+        function gradeSum(grade1, grade2, grade3) {
+            const sum = grade1 + grade2 + grade3;
+            return sum;
+        }
+        function gradeAverage(grade1, grade2, grade3) {
+            const sum = gradeSum(grade1, grade2, grade3);
+            const average = sum / 3;
+            return average;
+        }
+
+        //ARROW FUNCTION
+        const sum = (grade1, grade2, grade3) => {
+            const ans = grade1 + grade2 + grade3;
+            return ans;
+        }
+        console.log(sum(99, 98, 100));
+
+        console.log("The average is", gradeAverage(90, 91, 92));
+        console.log("The average is", gradeSum(90,91,92));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
